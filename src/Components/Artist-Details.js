@@ -9,7 +9,7 @@ let ArtistDetails = () => {
 
 
     useEffect(() => {
-        fetch(`https://music-db.onrender.com/artists/${id}`)
+        fetch(`http://localhost:3000/artists/${id}`)
             .then((response) => { return response.json() })
             .then((data) => {
                 setArtist(data);

@@ -39,7 +39,7 @@ export default class ArtistsList extends Component {
     }
 
     componentDidMount() {
-        fetch('https://music-db.onrender.com/artists')
+        fetch('http://localhost:3000/artists')
             .then((res) => {
                 return res.json()
             })
